@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+       <link rel="stylesheet" href="CSS/MyStyle.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    </head>
+
+
+    <body>
+      
+
+      <header>       
+       
+          <a class="ListLink" href="#home" >
+            <img src="Assets/StudioLogo.png" alt="" class="Logo">
+          </a>
+
+          <ul>
+            <li><a class="ListLink" href="https://play.google.com/store/apps/details?id=com.RiseDice.Marsadventures">PLAY STORE</a></li>
+            <li><a class="ListLink" href="">APP STORE</a></li>
+            <li><a class="ListLink" href="#footer">CONTACT</a></li>
+            <li><a class="ListLink" href="#About">ABOUT</a></li>
+          </ul>
+          
+         <button class="Hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+         </button>
+          
+        
+      </header>
+
+      <div class="Mobile-Menu">
+        <li><a class="ListLink" id="link_1" href="https://play.google.com/store/apps/details?id=com.RiseDice.Marsadventures">PLAY STORE</a></li>
+        <li><a class="ListLink" id="link_2" href="">APP STORE</a></li>
+        <li><a class="ListLink" id="link_3" href="#footer">CONTACT</a></li>
+        <li><a class="ListLink" id="link_4" href="#About">ABOUT</a></li>
+      </div>
+
+      <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky",window.scrollY >0)
+        })
+
+    
+
+        
+
+      </script>
+       
+           <section class="section section-1" id="home">
+          
+        
+           <div class="Content">
+
+            <div class="TitalDescription">
+
+              <h1 class="Title">
+                MARS
+              </h1>
+              <P class="description">
+           
+                ENJOY THIS ENDLESS SPACE JETPACK ADVENTURE IN THE ALIEN UNFORGIVING ENVIRONMENT OF MARS FLY AS AN ASTRONAUT AND EXPLORE THE DYNAMIC RED PLANET
+
+              </P>
+ 
+            </div>
+
+           
+           
+            
+
+           </div>
+
+
+           <a href="https://play.google.com/store/apps/details?id=com.RiseDice.Marsadventures" class="Playstore"><img src="Assets/GooglePlay.png" alt="" class="Playstore"></a>
+           <a href="" class="Appstore"><img src="Assets/Appstore.png" alt="" class="Appstore"></a>
+
+
+           <div class="Screenshots_Container">
+
+              <img src="Assets/Screenshots_1.png" alt="" class="Screenshot_1">
+
+           </div>
+
+
+          
+          
+
+         
+          
+        </section>
+        
+        <section class="section section-2" id="About">
+
+          <div class="Screenshots_Container">
+
+            <img src="Assets/Screenshots_2.png" alt="" class="Screenshots_2">
+
+          </div>
+
+          <div  class="Content">
+
+            <p>
+              THE SPACE AGENCY HAVE SENT FIVE ASTRONAUTS ON A MISSION TO MARS FOR THEIR PLANET EXPLORATIONS SPACE PROGRAM 
+              YOUR MISSION IS TO SURVIVE AND ENJOY THE ALIEN RED DUNES REMEMBER THE RED MARTIAN
+                PLANET IS YOU'RE ENEMY DODGE THE OBSTACLES AS THEY COME AND STAY ALIVE IS LONG AS POSSIBLE.
+            </p>
+
+          </div>
+            
+        </section>
+        
+        <section class="section section-3" id="video">
+
+          <div class="video">
+            <iframe class="VideoPreview" src="https://www.youtube.com/embed/i0EXQ7SdTug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          
+          
+        </section>
+        
+
+        <section class="section footer" id="footer">
+          <div class="Icons">
+            <a href="https://web.facebook.com/profile.php?id=100091500200685"><img src="Assets/FB.png" alt=""></a>
+            <a href="https://www.instagram.com/risedice/"><img src="Assets/IG.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCMC2lWYOddc7hzlkmRTvW7w"><img src="Assets/YT.png" alt=""></a>     
+          </div>
+          
+          <div class="FooterText" >
+            <p>WE ARE BASED IN AMMAN, JORDAN</p>
+            <P style="letter-spacing: 1px;">contact us: risediceinfo@gmail.com</P>
+          </div>
+
+          <div class="CopyRights">
+<p>MARS ADVENTURES &copy; 2023 mohammad abo al foul</p>
+          </div>
+        </section>
+
+        <script src="JS/Mars.js"></script>
+      </body>
+</html>

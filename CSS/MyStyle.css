@@ -1,0 +1,1097 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+@font-face {
+  font-family: 'Bumbo';
+  src: url('../Assets/Bumpo.ttf') format('truetype');
+  
+}
+html{
+  height: -webkit-fill-available;
+}
+
+
+html body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bumbo",sans-serif;
+    overflow-x: hidden;
+    height: -webkit-fill-available;
+
+  }
+
+  .Continer{
+    scroll-snap-type:mandatory;
+  }
+  
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    scroll-snap-align:start;
+    height: -webkit-fill-available;
+  }
+  
+  .section-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Assets/BG.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Assets/BG_3.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .section-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Assets/BG_2.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .footer {
+    height: 50vh;
+    background-color: rgb(23, 28, 40);
+    position: relative;
+  }
+  
+  .content {
+    max-width: 800px;
+    padding: 20px;
+  }
+
+
+  
+  header{
+    position: absolute;
+    
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    display: flex;
+    padding: 10px 20px;
+    background:none;
+    transition: 0.6s;
+  }
+
+  header.sticky{
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+
+ header .Logo{
+
+  height: auto;
+  width: 100%;
+  
+ 
+ }
+
+
+ header a.ListLink{
+  width: 150px;
+  transition: 0.5s;
+
+ }
+
+ header.sticky a.ListLink{
+  width: 130px;
+
+ }
+ 
+ header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+ }
+
+
+ header ul li
+ {
+position: relative;
+list-style-type: none;
+ }
+
+ header ul li a.ListLink{
+
+  position: relative;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  
+   }
+
+   header.sticky a.ListLink{
+
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    
+     }
+
+     header ul li a:hover{
+      padding: 0px 0px;
+      font-size: 1.6em;
+      
+     }
+
+     header.sticky ul li a:hover{
+      padding: 0px 0px;
+      font-size: 1.35em;
+      
+     }
+     .Hamburger{
+      background:none;
+      border: none;
+      outline: none;
+      display: none;
+      position: relative;
+      cursor: pointer;
+      appearance: none;
+
+     }
+    
+     .Hamburger span{
+      display: block;
+      width: 35px;
+      height: 5px;
+      margin-bottom: 5px;
+      position: relative;
+      background-color: white;
+      border-radius: 6px;
+      z-index: 2;
+      transform-origin: 0 0;
+      transition: .5s;
+     }
+
+     header.sticky button span{
+      display: block;
+      width: 30px;
+      height: 5px;
+      margin-bottom: 5px;
+      position: relative;
+      background-color: white;
+      border-radius: 5px;
+      z-index: 2;
+      transform-origin: 0 0;
+      transition: .5s;
+     }
+     
+
+     
+    
+
+
+   .Mobile-Menu a{
+ display: block;
+ padding-top: 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  transition: .3s;
+  
+   }
+
+   .Mobile-Menu {
+    
+    padding-top: 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.3s;
+   }
+   .Mobile-Menu.is-open{
+   
+    transform: translateY(0);
+    opacity: 1;
+   }
+
+
+ 
+
+
+div.Content{
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+div.Screenshots_Container{
+  clear: left;
+  width: 50%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+div.Content div.TitalDescription {
+ height: 200px;
+ width: 100%;
+ margin: 200px 60px 40px;
+ color: white;
+ font-size: 20px;
+ 
+
+}
+
+
+
+
+
+
+
+
+div.Screenshots_Container img{
+
+ width: 90%;
+ height: auto;
+ display: flex;
+ margin: 70px 5px 10px 20px ; 
+
+}
+
+.section-2 div.Screenshots_Container{
+
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.section-2 div.Content{
+
+  width: 50%;
+  height: 100vh;
+  clear: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.section-2 div.Content p{
+
+  max-width: 350px;
+  max-height: 400px;
+  text-align: center;
+  margin: 200px 40px;
+  font-size: 20px;
+}
+
+
+
+
+
+img.Screenshots_2 {
+
+  width:  90%;
+ height: auto;
+ display: flex;
+ margin: 70px 5px 10px 20px ; 
+            
+}
+
+.section-3 div.text {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  display: inline-block;
+  left: 60px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  
+}
+.section-3 div.video {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  
+  
+  
+}
+
+div iframe{
+ 
+  width: 1000px;
+  height: 80%;
+}
+
+
+.footer div.Icons{
+ 
+
+  position: absolute;
+  top: 20px;
+  
+}
+
+.footer div.Icons a{
+  
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.footer div.Icons a img{
+  
+  
+  width: 100%;
+  height:  100%;
+
+
+}
+
+div.FooterText p{
+
+  text-align: center;
+  color: white;
+}
+div.CopyRights{
+  position: absolute;
+  bottom: 5px;
+}
+div.CopyRights p{
+  color: rgb(164, 164, 164);
+  font-size: 10px;
+}
+
+
+
+
+/* Mobile Styles */
+/* These styles will be applied to screens with a maximum width of 767px */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Add your mobile-specific styles here */
+
+  header ul li a {
+    display: none;
+    }
+    .Hamburger {
+     display: block;
+    }
+    .Mobile-Menu{
+     display: block;
+    }
+   
+   
+    .section-1 div.Content{
+     width: 100%;
+     height: 50%;
+     float: none;
+     clear: both;
+     display: flex;
+     position: absolute;
+     top: 0;
+     text-align: center;
+     justify-content: center; /* Horizontally center the children */
+     align-items: center;
+     
+   }
+   .section-1 div.Screenshots_Container{
+     clear: left;
+     width: 100%;
+     height: 50%;
+     margin: 0;
+     display: flex;
+     position: absolute;
+     bottom: 0;
+     justify-content: center; /* Horizontally center the children */
+     align-items: center;
+   }
+   
+   .section-1 div.Screenshots_Container img{
+   
+     width:  70%;
+     height: auto;
+     display: flex;
+     margin: auto; 
+     
+    
+    }
+   
+    div.Content div.TitalDescription {
+     height: 30%;
+     width: 90%;
+     text-align: left;
+     margin: auto;
+     color: rgb(255, 255, 255);
+     font-size: 12px;
+     vertical-align: middle;
+     
+    }
+   
+    .section-1 a {
+     
+     display: inline-block;
+     position: relative;
+     height: au;
+     width: 130px;
+     margin:  5px;
+     text-align: center;
+     vertical-align: middle;
+   }
+   
+   .section-1 a img.Appstore {
+    
+    width:90%;
+    height: auto;
+   
+     
+   
+   }
+   
+   .section-1 a img.Playstore {
+     width: 100%;
+     height: auto;
+     
+   
+   }
+   
+   
+   
+   .section-2 div.Screenshots_Container{
+   
+    width: 100%;
+    height: 50%;
+    float: none;
+    clear: both;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    justify-content: center; /* Horizontally center the children */
+    align-items: center;
+    
+  }
+  
+  .section-2 div.Content{
+  
+    width: 100%;
+    height: 50%;
+    float: none;
+    clear: both;
+    display: flex;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    justify-content: center; /* Horizontally center the children */
+    align-items: center;
+   
+    
+    
+  }
+  
+  .section-2 div.Content p{
+  
+    max-width: 80%;
+    max-height: 70%;
+    text-align: center;
+    margin: 50px auto 50px;
+    font-size: 16px;
+    text-align: center;
+  }
+   
+   .section-2 div.Screenshots_Container img {
+   
+    width: 75%;
+    height: auto;
+    display: flex;
+    margin: 20px auto 10px ; 
+               
+   }
+   
+   div iframe{
+    
+     width:100%;
+     height: 35vh;
+   }
+
+   .section-3 {
+    height: 35vh;
+  }
+
+
+
+  .footer div.Icons a{
+  
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+  
+
+  div.FooterText p{
+
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
+  div.CopyRights{
+    position: absolute;
+    bottom: 5px;
+  }
+  div.CopyRights p{
+    color: rgb(164, 164, 164);
+    font-size: 10px;
+  }
+}
+
+
+/* Tablet Styles */
+/* These styles will be applied to screens with a minimum width of 768px and a maximum width of 991px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Add your tablet-specific styles here */
+
+  header ul li a {
+    display: none;
+    }
+    .Hamburger {
+     display: block;
+    }
+    .Mobile-Menu{
+     display: block;
+    }
+   
+   
+    .section-1 div.Content{
+     width: 100%;
+     height: 50%;
+     float: none;
+     clear: both;
+     display: flex;
+     position: absolute;
+     top: 0;
+     text-align: center;
+     justify-content: center; /* Horizontally center the children */
+     align-items: center;
+     
+   }
+   .section-1 div.Screenshots_Container{
+     clear: left;
+     width: 100%;
+     height: 50%;
+     margin: 0;
+     display: flex;
+     position: absolute;
+     bottom: 0;
+     justify-content: center; /* Horizontally center the children */
+     align-items: center;
+   }
+   
+   .section-1 div.Screenshots_Container img{
+   
+     width:  60%;
+     height: auto;
+     display: flex;
+     margin: auto; 
+     
+    
+    }
+   
+    div.Content div.TitalDescription {
+     height: 40%;
+     width: 80%;
+     text-align: left;
+     margin: auto;
+     color: rgb(255, 255, 255);
+     font-size: 20px;
+     vertical-align: middle;
+     
+    }
+   
+    .section-1 a {
+     
+     display: inline-block;
+     position: relative;
+     height: auto;
+     width: 250px;
+     margin:  5px;
+     margin-bottom: 15px;
+     text-align: center;
+     vertical-align: middle;
+   }
+   
+   .section-1 a img.Appstore {
+    
+    width:90%;
+    height: auto;
+   
+     
+   
+   }
+   
+   .section-1 a img.Playstore {
+     width: 100%;
+     height: auto;
+     
+   
+   }
+   
+   
+   
+   .section-2 div.Screenshots_Container{
+   
+    width: 100%;
+    height: 50%;
+    float: none;
+    clear: both;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    justify-content: center; /* Horizontally center the children */
+    align-items: center;
+    
+  }
+  
+  .section-2 div.Content{
+  
+    width: 100%;
+    height: 50%;
+    float: none;
+    clear: both;
+    display: flex;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    justify-content: center; /* Horizontally center the children */
+    align-items: center;
+   
+    
+    
+  }
+  
+  .section-2 div.Content p{
+  
+    max-width: 80%;
+    max-height: 70%;
+    text-align: center;
+    margin: 50px auto 50px;
+    font-size: 25px;
+    text-align: center;
+  }
+   
+   .section-2 div.Screenshots_Container img {
+   
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: 20px auto 10px ; 
+               
+   }
+   
+   div iframe{
+    
+     width:100%;
+     height: 35vh;
+   }
+
+   .section-3 {
+    height: 35vh;
+  }
+
+
+
+  .footer div.Icons a{
+  
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+  
+
+  div.FooterText p{
+
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
+  div.CopyRights{
+    position: absolute;
+    bottom: 5px;
+  }
+  div.CopyRights p{
+    color: rgb(164, 164, 164);
+    font-size: 10px;
+  }
+}
+
+
+/* Desktop Styles */
+/* These styles will be applied to screens with a minimum width of 992px */
+@media screen and (min-width: 1025px) {
+  /* Add your desktop-specific styles here */
+
+
+  div.Content{
+    width: 50%;
+    height: 100vh;
+    float: left;
+  }
+  
+  div.Screenshots_Container{
+    clear: left;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  div.Content div.TitalDescription {
+
+   height: 35%;
+   width: 75%;
+   color: white;
+   font-size: 18px;
+   
+  
+  }
+  
+  
+  div.Screenshots_Container img{
+  
+   width: 80%;
+   height: auto;
+   display: flex;
+     
+  
+  }
+
+
+
+
+  .section-1 a.Playstore {
+     
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: 200px;
+    margin:  5px;
+    left: 60px;
+    bottom: 140px;
+  }
+
+  .section-1 a.Appstore {
+     
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: 200px;
+    margin:  5px;  
+    left: 60px;
+    bottom: 60px;
+  
+  }
+  
+  .section-1 a img.Appstore {
+   
+   width: 96%;
+   height: auto;
+  
+    
+  
+  }
+  
+  .section-1 a img.Playstore {
+    width: 100%;
+    height: auto;
+    
+  
+  }
+
+
+
+
+  
+  .section-2 div.Screenshots_Container{
+  
+    width: 50%;
+    height: 100vh;
+    float: left;
+  }
+  
+  .section-2 div.Content{
+  
+    width: 50%;
+    height: 100vh;
+    clear: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .section-2 div.Content p{
+  
+    max-width: 350px;
+    max-height: 400px;
+    text-align: center;
+    margin: 200px 40px;
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  
+  img.Screenshots_2 {
+  
+    width:  90%;
+   height: auto;
+   display: flex;
+   margin: 70px 5px 10px 20px ; 
+              
+  }
+  
+  .section-3 div.text {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    display: inline-block;
+    left: 60px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    
+  }
+  .section-3 div.video {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+    
+    
+  }
+  
+  div iframe{
+   
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+@media screen and (max-width: 900px) and (max-height: 480px) and (orientation: landscape) {
+  /* Add your mobile-specific styles here */
+
+ 
+.Mobile-Menu{
+  display: flex;
+  justify-content: center;
+}
+  .Mobile-Menu  li{
+    
+    display: inline-block;
+    margin-right: 10px; 
+  }
+  
+
+
+
+
+  
+
+
+
+
+  .section-1 div.Content{
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 0;
+    
+  }
+  
+  .section-1 div.Screenshots_Container{
+    clear: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+ 
+    right: 0;
+   
+  }
+  
+  
+  .section-1 div.Content div.TitalDescription {
+
+   height: 60%;
+   width: 60%;
+   color: rgb(255, 255, 255);
+   font-size: 10px;
+   
+   
+   
+  
+  }
+  
+  
+  .section-1 div.Screenshots_Container img{
+  
+   width: 70%;
+   height: auto;
+   display: flex;
+
+     
+  
+  }
+
+
+
+
+  .section-1 a.Playstore {
+     
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: 100px;
+    margin:  5px;
+    left: 30px;
+    bottom: 35px;
+  }
+
+  .section-1 a.Appstore {
+     
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: 100px;
+    margin:  5px;  
+    left: 140px;
+    bottom: 35px;
+  
+  }
+  
+  .section-1 a img.Appstore {
+   
+   width: 90%;
+   height: auto;
+  
+    
+  
+  }
+  
+  .section-1 a img.Playstore {
+    width: 100%;
+    height: auto;
+    
+  
+  }
+
+
+
+
+  
+  .section-2 div.Screenshots_Container{
+  
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 0;
+  }
+  
+  .section-2 div.Content{
+  
+    clear: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: white;
+    right: 0;
+    
+  }
+  
+  .section-2 div.Content p{
+  
+    max-width: 350px;
+    max-height: 400px;
+    text-align: center;
+    margin: 200px 40px;
+    font-size: 14px;
+  }
+  
+  
+  
+  
+  
+  img.Screenshots_2 {
+  
+    width:  80%;
+   height: auto;
+   display: flex;
+   margin: 70px 5px 10px 20px ; 
+              
+  }
+  
+ 
+
+  
+  div iframe{
+    
+    width:100%;
+    height: 100vh;
+  }
+
+  .section-3 {
+   height: 100vh;
+ }
+
+
+ .footer {
+  height: 100vh;
+ 
+}
+}
+
+
+
+
+
